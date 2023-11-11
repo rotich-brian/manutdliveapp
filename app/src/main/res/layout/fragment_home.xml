@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001D30"
+    tools:context=".MainActivity"
+    android:id="@+id/swipeRefresh">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/shimmer">
+
+            <LinearLayout
+                android:id="@+id/ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_large_posts_row">
+
+                </include>
+                <include layout="@layout/shimmer_post_ads_row">
+
+                </include>
+                <include layout="@layout/shimmer_post_ads_row">
+
+                </include>
+                <include layout="@layout/shimmer_post_ads_row">
+
+                </include>
+                <include layout="@layout/shimmer_post_ads_row">
+
+                </include>
+                <include layout="@layout/shimmer_post_ads_row">
+
+                </include>
+                <include layout="@layout/shimmer_post_ads_row">
+
+                </include>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            tools:listitem="@layout/blog_post_headlines"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <Button
+            android:id="@+id/loadMoreBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOAD MORE POSTS"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

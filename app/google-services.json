@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "702981832281",
+    "project_id": "man-united-app-2ecb1",
+    "storage_bucket": "man-united-app-2ecb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702981832281:android:10577692e9e6469d11bb48",
+        "android_client_info": {
+          "package_name": "buzz.android.manutdlive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702981832281-2nob3lmm2elphk79lrg6nnfpktcvrodl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "buzz.android.manutdlive",
+            "certificate_hash": "78b0249cced26cda6af2246846f87db50c4b38b5"
+          }
+        },
+        {
+          "client_id": "702981832281-r4iq5baofrkkhoci7b2t5489iunmg0ig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAey6iKgIJPLqx8YoqSDscSyO0BJnuXR5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702981832281-r4iq5baofrkkhoci7b2t5489iunmg0ig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
